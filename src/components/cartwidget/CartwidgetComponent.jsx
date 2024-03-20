@@ -1,10 +1,8 @@
-export default function Cartwidget () {
- 
+export default function CartwidgetComponent () {
     return(
     <>
         <div className="flex justify-center gap-2">
-            <p>🛒</p>
-            <span>0</span>
+            <p>Carrito de compras</p>
         </div>
     </>
     )
