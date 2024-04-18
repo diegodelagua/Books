@@ -1,6 +1,7 @@
 import { useContext } from "react"
 import { CartContext } from "../context/CartContext"
 import { Link } from "react-router-dom";
+import Swal from "sweetalert2"
 
 export default function Carrito () {
 
@@ -8,6 +9,14 @@ export default function Carrito () {
 
     const botonVaciar = () => {
         vaciarCarrito ();
+        Swal.fire({
+            title: "😭😭😭",
+            text: "Productos Eliminados",
+            imageUrl: "https://i.pinimg.com/564x/76/22/cf/7622cfb86320e9d922e4c1f4a22d07d4.jpg",
+            imageWidth: 400,
+            imageHeight: 200,
+            imageAlt: "Custom image"
+          });
     }
 
     return (

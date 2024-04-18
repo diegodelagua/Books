@@ -22,7 +22,7 @@ function App() {
       <BrowserRouter>
           <Navbar/>
               <Routes> 
-                  <Route path="/home" element={<Home/>}/>
+                  <Route path="/" element={<Home/>}/>
                   <Route path="/productos" element= {<ItemListContainer/>}/>
                   <Route path="/item/:id" element= {<ItemDetailContainer/>}/>
                   <Route path="productos/:categoria" element={<ItemListContainer/>} />
@@ -30,8 +30,9 @@ function App() {
                   <Route path="/carrito" element= {<Carrito/>}/>
                   <Route path="/checkout" element = {<Checkout/>}/>
               </Routes>
+              <Footer/>
         </BrowserRouter>
-        <Footer/>
+        
         </CartProvider>
         
     </>
