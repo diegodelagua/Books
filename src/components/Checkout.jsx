@@ -49,7 +49,7 @@ export default function Checkout () {
         )
     }
     return (
-        <div className=" block justify-center items-center p-8 gap-5 max-w-3xl m-auto">
+        <div className=" block justify-center items-center p-8 gap-5 max-w-3xl m-auto h-screen">
         <h1 className="text-center font-bold text-2xl pb-8" >Finalizar compra</h1>
         <form className="flex flex-col gap-3 p-2 rounded-md w-full  border bg-amber-700 border-black " onSubmit={handleSubmit(comprar)}>
 
